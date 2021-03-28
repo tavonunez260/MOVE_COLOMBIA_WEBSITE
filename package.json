@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "concat": "^1.0.3",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1"
+  },
+  "name": "move_colombia_mockup",
+  "version": "1.0.0",
+  "description": "MOVE COLOMBIA is a services brand offering solutions to all foreigners willing to relocate to Colombia and need help with paperwork.",
+  "main": "index.js",
+  "scripts": {
+    "devserver": "live-server",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tavonunez260"
+  },
+  "author": "Gustavo Nunez Ortiz",
+  "license": "ISC"
+}
