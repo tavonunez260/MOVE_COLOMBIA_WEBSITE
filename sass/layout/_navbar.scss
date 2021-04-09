@@ -1,0 +1,271 @@
+.nav-bar {
+
+    @media only screen and (max-width: $bp-lg) {
+        cursor: auto;
+    }
+
+    @media only screen and (max-width: $bp-nav-bar2) {
+        flex-basis: 100%;
+        order: 3;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+        position: absolute;
+        top: 7.5rem;
+        left: -110%;
+        width: 100%;
+        height: 80vh;
+        background-color: $primary-color;
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 6px 0 10px -5px rgba($shadow-color, 0.8), -6px 0 10px -5px rgba($shadow-color, 0.8), 0 6px 10px -5px rgba($shadow-color, 0.8);
+        transition: all cubic-bezier(.9, 0, .35, 1) .7s;
+    }
+
+    &__logo-container {
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        position: relative;
+        width: 22rem;
+        height: 7rem;
+
+        @media only screen and (max-width: $bp-lg) {
+            cursor: auto;
+        }
+
+        @media only screen and (max-width: $bp-nav-bar2) {
+            justify-content: flex-start;
+            flex-basis: 50%;
+            order: 1;
+        }
+
+        @media only screen and (max-width: $bp-sm) {
+            display: flex;
+            justify-content: flex-start;
+            flex-basis: 40%;
+            order: 1;
+        }
+
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo {
+        position: absolute;
+        left: 0;
+        margin: 1rem;
+        height: 5rem;
+        border-radius: 4px;
+        transition: opacity .3s ease-in-out;
+
+        @media (hover: hover) {
+            &--top:hover {
+                opacity: 0;
+            }
+        }
+
+        @media (hover: none) {
+            &--top:active {
+                opacity: 0;
+            }
+        }
+    }
+
+    &__list {
+        @media only screen and (max-width: $bp-sm) {
+            flex-direction: column;
+        }
+
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    &__element {
+        margin: .5rem;
+        padding: 0;
+        border-radius: 4px;
+        position: relative;
+        background-color: inherit;
+
+        .nav-bar__link {
+            color: $white-color;
+        }
+
+        &--active {
+            background-color: $primary-color-dark;
+
+            .nav-bar__link {
+                color: $primary-color-light;
+            }
+        }
+
+        @media(hover: hover) {
+            &:hover {
+                background-color: $primary-color-dark;
+            }
+
+            &:hover .nav-bar__link {
+                color: $primary-color-light;
+            }
+
+            &:hover .nav-bar__sublist {
+                display: block;
+            }
+        }
+
+        @media only screen and (max-width: $bp-sm) {
+            margin: 0;
+            border-radius: 0;
+            text-align: center;
+            border-bottom: 1px solid rgba($primary-color-dark, .5);
+        }
+    }
+
+    &__link {
+        -webkit-user-select: none;
+        user-select: none;
+        display: block;
+        margin: 0;
+        padding: .8rem;
+        width: 100%;
+        height: 100%;
+
+        &:link,
+        &:visited {
+            @media only screen and (max-width: $bp-lg) {
+                cursor: default;
+            }
+        }
+    }
+
+    &--active {
+        display: block;
+        left: 0;
+        flex-basis: 100%;
+        order: 3;
+    }
+
+    &__sublist {
+        display: none;
+        position: absolute;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+        background-color: $primary-color;
+        border-radius: 4px;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__subelement {
+        margin: .5rem;
+        padding: 0;
+        border-radius: 4px;
+
+        &:active {
+            background-color: $primary-color-dark;
+        }
+
+        &:active .nav-bar__sublink {
+            color: $primary-color-light;
+        }
+
+        &:hover {
+            background-color: $primary-color-dark;
+        }
+
+        &:hover .nav-bar__sublink {
+            color: $primary-color-light;
+        }
+    }
+
+    &__sublink {
+        display: block;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+
+        @media (hover: none) {
+            &:active {
+                color: $primary-color-light;
+            }
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                color: $primary-color-light;
+            }
+        }
+    }
+
+    &__login-lang {
+        cursor: pointer;
+        -webkit-user-select: none;
+        user-select: none;
+
+        @media only screen and (max-width: $bp-lg) {
+            cursor: auto;
+        }
+
+        @media only screen and (max-width: $bp-nav-bar2) {
+            flex-basis: 45%;
+            order: 2;
+        }
+
+        @media only screen and (max-width: $bp-sm) {
+            display: flex;
+            justify-content: center;
+            flex-basis: auto;
+            order: 2;
+        }
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        &__login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            background-color: $primary-color-light;
+        }
+
+        &__lang-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-icon {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            margin: 1rem;
+            fill: $primary-color-dark;
+        }
+    }
+
+    &__menu-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__menu-icon {
+        @media only screen and (max-width: $bp-sm) {
+            display: block;
+            width: 5.5rem;
+            height: 5.5rem;
+            margin: 1rem;
+            flex-basis: 50%;
+            fill: $primary-color-dark;
+        }
+
+        display: none;
+    }
+}

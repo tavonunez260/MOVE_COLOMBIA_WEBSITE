@@ -1,2 +1,23 @@
 //Font variables
-$font-primary: 'Roboto', 'Sans Serif';
+$font-primary: 'Roboto',
+'Sans Serif';
+$font-secondary: 'Open Sans',
+'Sans Serif';
+
+//Colors
+$primary-color: #00c2cb;
+$primary-color-dark: #267c80;
+$primary-color-light: #b3fbff;
+$shadow-color: #444;
+$white-color: #fff;
+
+//Responsive breakpoints
+$bp-lg: 75em; // 1200px; //75%
+$bp-md: 62em; // 992px;  //62%
+$bp-sm: 48em; // 768px;  //48%
+$bp-xs1: 36em; // 576px;  //36%
+
+$bp-nav-bar1: 58.75em; // 940px;
+$bp-nav-bar2: 55em; // 820px;
+
+$bp-xs2: 26.25em; // 420px;

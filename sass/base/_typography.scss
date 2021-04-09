@@ -1,3 +1,27 @@
-h1 {
-    font-size: 3rem;
+.header {
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: $font-secondary;
+
+    @media only screen and (min-width: $bp-sm) {
+        font-size: 1.5rem;
+    }
+
+    @media only screen and (min-width: $bp-nav-bar1) {
+        font-size: 1.8rem;
+    }
+}
+
+.nav-bar {
+
+    &__link,
+    &__sublink {
+
+        &:link,
+        &:visited {
+            color: $white-color;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
 }
