@@ -1,18 +1,15 @@
-.header {
-    font-size: 1.4rem;
+.nav-bar {
+    font-size: $navbar-fontsize-lg;
     font-weight: 600;
     font-family: $font-secondary;
 
-    @media only screen and (min-width: $bp-sm) {
-        font-size: 1.5rem;
+    @media only screen and (max-width: $bp-lg) {
+        font-size: $navbar-fontsize-md;
     }
 
-    @media only screen and (min-width: $bp-nav-bar1) {
-        font-size: 1.8rem;
+    @media only screen and (max-width: $bp-sm) {
+        font-size: $navbar-fontsize-sm;
     }
-}
-
-.nav-bar {
 
     &__link,
     &__sublink {
@@ -23,5 +20,28 @@
             text-decoration: none;
             text-transform: uppercase;
         }
+
+        &--sticky {
+            &:link,
+            &:visited {
+                color: $primary-color;
+            }
+        }
     }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            text-transform: uppercase;
+        }
+    }
+
+    &__sublink {
+
+        &:link,
+        &:visited {
+            text-transform: capitalize;
+        }
+    }    
 }

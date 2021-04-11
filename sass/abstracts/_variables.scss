@@ -1,9 +1,11 @@
+//////////////////////////////////////////////
 //Font variables
 $font-primary: 'Roboto',
 'Sans Serif';
 $font-secondary: 'Open Sans',
 'Sans Serif';
 
+//////////////////////////////////////////////
 //Colors
 $primary-color: #00c2cb;
 $primary-color-dark: #267c80;
@@ -11,6 +13,7 @@ $primary-color-light: #b3fbff;
 $shadow-color: #444;
 $white-color: #fff;
 
+//////////////////////////////////////////////
 //Responsive breakpoints
 $bp-lg: 75em; // 1200px; //75%
 $bp-md: 62em; // 992px;  //62%
@@ -19,5 +22,20 @@ $bp-xs1: 36em; // 576px;  //36%
 
 $bp-nav-bar1: 58.75em; // 940px;
 $bp-nav-bar2: 55em; // 820px;
-
 $bp-xs2: 26.25em; // 420px;
+
+//////////////////////////////////////////////
+//Dimensions
+$max-width: 1200px;
+
+//////////////////////////////////////////////
+//Navigation bar
+
+//Navbar font sizes
+$navbar-fontsize-lg: 1.4rem;
+$navbar-fontsize-md: 1.6rem;
+$navbar-fontsize-sm: 2.5rem;
+
+//Navbar sublist gap
+$navbar-sublist-width: 20rem;
+$navbar-sublist-gap: 2rem;

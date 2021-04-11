@@ -1,0 +1,17 @@
+@keyframes dropDownResponsive {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes dropDown {
+    0% {
+        transform: scaleY(0) translateY($navbar-sublist-gap);
+    }
+    100% {
+        transform: scaleY(1) translateY($navbar-sublist-gap);
+    }
+}
